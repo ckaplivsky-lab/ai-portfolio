@@ -1,6 +1,8 @@
+import os
+
 import anthropic
 
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 def generate_listing(address, bedrooms, bathrooms, features):
     prompt = f"""
