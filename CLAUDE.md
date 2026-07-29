@@ -22,15 +22,23 @@ Standalone scripts living at the repo root are day-by-day sprint exercises, not 
 - `weather_test.py` — calls the open-meteo.com weather API, parses temperature/wind speed
 - `lead_scoring.py` — filters a list of lead dictionaries by score
 - `company_summary.py` — calls the Claude API for a 3-sentence company summary, saves to `company_summaries.csv`; includes typed exception handling, refusal/truncation checks, and CSV formula-injection sanitization
+- `python-basics/` — folder of Py4E course exercises and practice scripts (loops, functions, regex, sockets, file I/O) — kept separate from the portfolio demos above
 
-**Dependencies used so far:** `requests`, `anthropic`, `python-dotenv` — install via `pip3 install <package>`
+**Dependencies used so far:** `requests`, `anthropic`, `python-dotenv`, `beautifulsoup4`, `sqlite3` (built-in) — install via `pip3 install <package>`
 
 **Preferred model:** `claude-sonnet-5` for new API calls (current-gen, near-Opus quality) unless there's a specific reason to pin an older model.
+
+## Coursera: Python for Everybody
+Working through the Py4E specialization on Coursera, applying concepts in this repo where relevant:
+- **Course 1–2 (Basics):** variables, loops, conditionals, functions, string manipulation, list filtering, file reading — foundation for all scripts in `python-basics/`
+- **Course 3 (Web Data):** HTTP requests and sockets, BeautifulSoup for HTML scraping, XML parsing with ElementTree, JSON parsing, calling REST APIs (e.g. Open Location Code API)
+- **Course 4 (Databases):** SQL fundamentals, SQLite via Python's `sqlite3` module, building and querying tables, many-to-many relationships and junction tables, cursors — assignments covered an email-frequency counter, a music-track database, a student roster with grades, and geodata mapping
+
+These skills feed directly into future portfolio pieces that need to scrape data, call external APIs, or persist data locally instead of just calling the Claude API.
 
 ## Conventions for README-per-project
 
 When writing or editing a portfolio project README, follow the existing pattern (see `portfolio-1-customer-support-bot/README.md`):
-
 1. One-line hook summarizing what was built and the standout result
 2. Problem
 3. Solution
