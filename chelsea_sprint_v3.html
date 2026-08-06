@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chelsea's AI Sprint — Done by Aug 20</title>
+<title>Chelsea's AI Sprint v6 — Done by Sep 2</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#fff;--bg2:#f7f7f5;--bg3:#f0efec;--text:#1a1a18;--text2:#5a5a56;--text3:#8a8a85;--border:rgba(0,0,0,.1);--border2:rgba(0,0,0,.18);--blue:#1a6fe8;--blue-bg:#e8f0fd;--blue-text:#1a4fa8;--green:#1e8c4e;--green-bg:#e6f4ec;--green-text:#145c34;--amber:#b86b00;--amber-bg:#fef3e2;--amber-text:#7a4500;--purple:#534AB7;--purple-bg:#EEEDFE;--purple-text:#3C3489;--coral:#993C1D;--coral-bg:#FAECE7;--coral-text:#712B13;--r:10px;--rs:6px}
@@ -58,14 +58,15 @@ main{max-width:980px;margin:0 auto;padding:20px 16px 60px}
 .legend-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text2)}
 .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 .dot.learn{background:var(--blue)}.dot.build{background:var(--green)}.dot.publish{background:var(--amber)}.dot.paid{background:var(--coral)}
+.changelog{font-size:12px;color:var(--text2);background:var(--blue-bg);padding:10px 13px;border-radius:var(--rs);margin-bottom:16px;line-height:1.6}
 footer{text-align:center;padding:24px 16px;font-size:12px;color:var(--text3)}
 </style>
 </head>
 <body>
 <header>
   <div class="hi">
-    <div><div class="ht">Chelsea's AI Sprint — Done by Aug 20</div><div class="hs">Jun 15 – Aug 19, 2026 · Mon–Sat · 4+ hrs/day · Tel Aviv Aug 22 🇮🇱</div></div>
-    <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="bdg bl">57 days</span><span class="bdg am">Aug 20 deadline</span><span class="bdg gr" id="hdr-done">1 done</span></div>
+    <div><div class="ht">Chelsea's AI Sprint — Done by Sep 2</div><div class="hs">Jun 15 – Sep 2, 2026 · Mon–Fri · Day 14 (Jul 16) · Tel Aviv 🇮🇱</div></div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="bdg bl">48 days</span><span class="bdg am">Sep 2 deadline</span><span class="bdg gr" id="hdr-done">1 done</span></div>
   </div>
 </header>
 <main>
@@ -79,12 +80,11 @@ footer{text-align:center;padding:24px 16px;font-size:12px;color:var(--text3)}
 
 <div id="daily" class="mpanel active">
   <div class="stats-bar">
-    <div class="stat-card"><div class="stat-lbl">Days done</div><div class="stat-val" id="st-days">1/57</div></div>
+    <div class="stat-card"><div class="stat-lbl">Days done</div><div class="stat-val" id="st-days">1/48</div></div>
     <div class="stat-card"><div class="stat-lbl">Tasks done</div><div class="stat-val" id="st-tasks">0</div></div>
     <div class="stat-card"><div class="stat-lbl">Phase</div><div class="stat-val" id="st-phase">Phase 1</div></div>
-    <div class="stat-card"><div class="stat-lbl">Days left</div><div class="stat-val" id="st-left">56</div></div>
+    <div class="stat-card"><div class="stat-lbl">Days left</div><div class="stat-val" id="st-left">47</div></div>
   </div>
-  <div style="font-size:12px;color:var(--amber-text);background:var(--amber-bg);padding:9px 13px;border-radius:var(--rs);margin-bottom:16px">⚡ Saturday days have an amber border — lighter days. Every task from the original plan is included. Nothing removed.</div>
   <div class="legend">
     <div class="legend-item"><div class="dot learn"></div> Learn</div>
     <div class="legend-item"><div class="dot build"></div> Build</div>
@@ -96,56 +96,55 @@ footer{text-align:center;padding:24px 16px;font-size:12px;color:var(--text3)}
 </div>
 
 <div id="overview" class="mpanel">
-  <div style="font-size:18px;font-weight:600;margin-bottom:8px">57 days. 6 projects. 9 certs. Done Aug 20.</div>
-  <div class="phase-goal">Every task from the full 75-day plan is included — nothing removed. Tasks are redistributed across 57 Mon–Sat days. Saturdays are lighter. Mon–Fri are 4+ hours. You land in Tel Aviv Aug 22 fully job-ready.</div>
+  <div style="font-size:18px;font-weight:600;margin-bottom:8px">48 days. 8 projects. 7 certs. Done Sep 2.</div>
+  <div class="phase-goal">Rebuilt from v3 based on real job postings for AI Growth Marketer, Marketing/AI Ops, and Lifecycle Marketing roles. No Saturdays. Days 1–7 are exactly as before (already in progress). Day 8 onward is restructured. v6 update (after Day 21): swapped LangChain/RAG/crewAI for Clay, Lovable vibe-coding, and agent-builder tool trials — based on real "AI Growth Marketing Lead" postings (e.g. Gloat) that explicitly value hands-on building with Clay, Claude, n8n, and Lovable/Replit over engineering-framework depth. Deep engineering tools (LangChain, RAG/vector DBs, crewAI, Hugging Face Agents) are cut — none of the target role postings called for them, and they don't match the "marketer who builds" positioning that's the actual differentiator here.</div>
   <div class="sec-label">Phase breakdown</div>
   <div class="card"><div style="display:flex;flex-direction:column;gap:7px;font-size:13px">
-    <div><strong style="color:var(--text)">Week 1 (Days 1–6):</strong> <span style="color:var(--text2)">Make foundations, Zapier, n8n, webhooks, Postman</span></div>
-    <div><strong style="color:var(--text)">Week 2 (Days 7–12):</strong> <span style="color:var(--text2)">n8n advanced, Claude API intro, prompt engineering, Portfolio Piece 1</span></div>
-    <div><strong style="color:var(--text)">Week 3 (Days 13–18):</strong> <span style="color:var(--text2)">Python basics, Cursor, Claude Code, Replit</span></div>
-    <div><strong style="color:var(--text)">Week 4 (Days 19–24):</strong> <span style="color:var(--text2)">Python APIs + JSON, LangChain intro, GenAI cert, Portfolio Piece 2</span></div>
-    <div><strong style="color:var(--text)">Week 5 (Days 25–30):</strong> <span style="color:var(--text2)">RAG pipelines, IBM cert, LangGraph, Portfolio Piece 3</span></div>
-    <div><strong style="color:var(--text)">Week 6 (Days 31–36):</strong> <span style="color:var(--text2)">crewAI, hero project build, Portfolio Pieces 4+5</span></div>
-    <div><strong style="color:var(--text)">Week 7 (Days 37–42):</strong> <span style="color:var(--text2)">Hero project complete, SQL, Braze, GA4, Mixpanel, first applications</span></div>
-    <div><strong style="color:var(--text)">Week 8 (Days 43–48):</strong> <span style="color:var(--text2)">Maven, interactive resume, application sprint</span></div>
-    <div><strong style="color:var(--text)">Week 9 (Days 49–54):</strong> <span style="color:var(--text2)">Decision maker outreach, Loom cover letters, final polish</span></div>
-    <div><strong style="color:var(--text)">Final days (Days 55–57):</strong> <span style="color:var(--text2)">Last applications, GitHub polish, fly Aug 22 🇮🇱</span></div>
+    <div><strong style="color:var(--text)">Week 1 (Days 1–10, Jun 15–Jul 10):</strong> <span style="color:var(--text2)">Make/Zapier/n8n foundations, Claude API intro + tool use, Portfolio Piece 1 (AI Customer Support Bot)</span></div>
+    <div><strong style="color:var(--text)">Week 2 (Days 11–15, Jul 13–17):</strong> <span style="color:var(--text2)">Claude Code, Cursor, Replit, Python fundamentals</span></div>
+    <div><strong style="color:var(--text)">Week 3 (Days 16–20, Jul 20–24):</strong> <span style="color:var(--text2)">Python + APIs + CSV, Generative AI for Everyone cert, Portfolio Piece 2 (Lead Research Agent)</span></div>
+    <div><strong style="color:var(--text)">Week 4 (Days 21–25, Jul 27–31):</strong> <span style="color:var(--text2)">Clay, agentic outbound, Portfolio Piece 3 (AI-Native Outbound Agent)</span></div>
+    <div><strong style="color:var(--text)">Week 5 (Days 26–30, Aug 3–7):</strong> <span style="color:var(--text2)">Lovable vibe-coding, Portfolio Piece 4 (Vibe-Coded Campaign Page), SQL basics begin</span></div>
+    <div><strong style="color:var(--text)">Week 6 (Days 31–35, Aug 10–14):</strong> <span style="color:var(--text2)">Portfolio Piece 6 (SQL Marketing Analytics Dashboard), Portfolio Piece 7 (A/B Test Framework)</span></div>
+    <div><strong style="color:var(--text)">Week 7 (Days 36–40, Aug 17–21):</strong> <span style="color:var(--text2)">Hero Project — AI-Personalized Lifecycle Engine with Braze, free Braze certs</span></div>
+    <div><strong style="color:var(--text)">Week 8 (Days 41–45, Aug 24–28):</strong> <span style="color:var(--text2)">Maven cohort (Portfolio Piece 8), GA4, Mixpanel, interactive resume, LinkedIn overhaul</span></div>
+    <div><strong style="color:var(--text)">Week 9 (Days 46–48, Aug 31–Sep 2):</strong> <span style="color:var(--text2)">Loom cover letters, decision-maker outreach, final applications, launch</span></div>
   </div></div>
 </div>
 
 <!-- CERTIFICATIONS TAB -->
 <div id="certs" class="mpanel">
-  <div style="font-size:18px;font-weight:600;margin-bottom:8px">9 Certifications · ~$650 total</div>
-  <div class="phase-goal">Earn these in order alongside your weekly builds. Add each to LinkedIn immediately after completing.</div>
+  <div style="font-size:18px;font-weight:600;margin-bottom:8px">7 Certifications</div>
+  <div class="phase-goal">IBM AI Developer Professional Certificate, ChatGPT Prompt Engineering for Developers, and Building Systems with the ChatGPT API are cut — none of your target roles (AI Growth Marketer, Marketing/AI Ops, Lifecycle Marketing) called for OpenAI-specific or software-engineering-flavored credentials. Braze's free path is added since Braze/Customer.io/Iterable came up in almost every lifecycle posting.</div>
 
   <div class="sec-label">Paid Certifications</div>
   <div class="card" style="display:flex;flex-direction:column;gap:12px">
     <div style="display:flex;align-items:flex-start;gap:14px">
       <span class="pchip paid" style="margin-top:2px;white-space:nowrap">Paid</span>
       <div>
-        <div style="font-size:13px;font-weight:600;color:var(--text)">Generative AI for Everyone — Andrew Ng / DeepLearning.AI</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 4 · <a href="https://www.coursera.org/learn/generative-ai-for-everyone" target="_blank">coursera.org</a></div>
-      </div>
-    </div>
-    <div style="display:flex;align-items:flex-start;gap:14px">
-      <span class="pchip paid" style="margin-top:2px;white-space:nowrap">Paid</span>
-      <div>
         <div style="font-size:13px;font-weight:600;color:var(--text)">Python for Everybody — University of Michigan</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:2px">Weeks 3–4 · <a href="https://www.coursera.org/specializations/python" target="_blank">coursera.org</a></div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Weeks 2–6 · all 5 courses (Programming for Everybody, Python Data Structures, Using Python to Access Web Data, Using Databases with Python, Capstone) · <a href="https://www.coursera.org/specializations/python" target="_blank">coursera.org</a> — full specialization needed for the certificate</div>
       </div>
     </div>
     <div style="display:flex;align-items:flex-start;gap:14px">
       <span class="pchip paid" style="margin-top:2px;white-space:nowrap">Paid</span>
       <div>
-        <div style="font-size:13px;font-weight:600;color:var(--text)">IBM AI Developer Professional Certificate</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:2px">Weeks 5–7 · <a href="https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai" target="_blank">coursera.org</a></div>
+        <div style="font-size:13px;font-weight:600;color:var(--text)">Generative AI for Everyone — Andrew Ng / DeepLearning.AI</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 3 · <a href="https://www.coursera.org/learn/generative-ai-for-everyone" target="_blank">coursera.org</a></div>
       </div>
     </div>
     <div style="display:flex;align-items:flex-start;gap:14px">
-      <span class="pchip paid" style="margin-top:2px;white-space:nowrap">Paid ~$500</span>
+      <span class="pchip paid" style="margin-top:2px;white-space:nowrap">Paid ~$15</span>
       <div>
-        <div style="font-size:13px;font-weight:600;color:var(--text)">Maven: Actionable AI for Marketers — Britney Muller</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:2px">Weeks 8–9 · <a href="https://maven.com" target="_blank">maven.com</a></div>
+        <div style="font-size:13px;font-weight:600;color:var(--text)">n8n Masterclass 2026 — Dominik (Udemy)</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 3 · <a href="https://www.udemy.com/course/n8n-masterclass-learn-ai-automation-from-scratch/" target="_blank">udemy.com</a> — covers Claude Code + n8n together. Buy on sale ~$15.</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:14px">
+      <span class="pchip paid" style="margin-top:2px;white-space:nowrap">Optional ~$25–50</span>
+      <div>
+        <div style="font-size:13px;font-weight:600;color:var(--text)">Braze Certified Practitioner Exam</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 7 · <a href="https://learning.braze.com/braze-certified-practitioner-bootcamp-and-certification" target="_blank">learning.braze.com</a> — take only if the free Skills Badge goes well and time allows</div>
       </div>
     </div>
   </div>
@@ -155,22 +154,29 @@ footer{text-align:center;padding:24px 16px;font-size:12px;color:var(--text3)}
     <div style="display:flex;align-items:flex-start;gap:14px">
       <span class="pchip learn" style="margin-top:2px;white-space:nowrap">Free</span>
       <div>
-        <div style="font-size:13px;font-weight:600;color:var(--text)">ChatGPT Prompt Engineering for Developers — DeepLearning.AI</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 2 · <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank">deeplearning.ai</a></div>
+        <div style="font-size:13px;font-weight:600;color:var(--text)">Nate Herk: Build &amp; Sell n8n AI Agents (8hr YouTube)</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 3 · <a href="https://www.youtube.com/@nateherk" target="_blank">youtube.com/@nateherk</a> — 15 n8n workflows, no code. Most practical free n8n resource.</div>
       </div>
     </div>
     <div style="display:flex;align-items:flex-start;gap:14px">
       <span class="pchip learn" style="margin-top:2px;white-space:nowrap">Free</span>
       <div>
-        <div style="font-size:13px;font-weight:600;color:var(--text)">LangChain for LLM Application Development — DeepLearning.AI</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 5 · <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/" target="_blank">deeplearning.ai</a></div>
+        <div style="font-size:13px;font-weight:600;color:var(--text)">Clay 101: GTM Automation</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 4 · <a href="https://university.clay.com" target="_blank">university.clay.com</a> — official Clay training, free. Named directly in AI Growth Marketing job postings alongside n8n and Claude.</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:14px">
+      <span class="pchip learn" style="margin-top:2px;white-space:nowrap">Free (Plus)</span>
+      <div>
+        <div style="font-size:13px;font-weight:600;color:var(--text)">Vibe Coding with Lovable: From Idea to App</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 5 · <a href="https://www.coursera.org/learn/vibe-coding-with-lovable-from-idea-to-app" target="_blank">coursera.org</a> — included with Coursera Plus, ~2 hours, shareable certificate.</div>
       </div>
     </div>
     <div style="display:flex;align-items:flex-start;gap:14px">
       <span class="pchip learn" style="margin-top:2px;white-space:nowrap">Free</span>
       <div>
-        <div style="font-size:13px;font-weight:600;color:var(--text)">Multi AI Agent Systems with crewAI</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 6 · <a href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank">deeplearning.ai</a></div>
+        <div style="font-size:13px;font-weight:600;color:var(--text)">Braze Customer Engagement Skills Badge</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">Week 7 · <a href="https://learning.braze.com/page/certification" target="_blank">learning.braze.com</a> — complete the free Customer Engagement Learning Path first</div>
       </div>
     </div>
     <div style="display:flex;align-items:flex-start;gap:14px">
@@ -203,118 +209,100 @@ footer{text-align:center;padding:24px 16px;font-size:12px;color:var(--text3)}
   <div class="phase-goal">Tools you're learning week by week. Add each to LinkedIn Skills as you complete them.</div>
 
   <div class="sec-label">Automation & Workflow</div>
-  <div class="card" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px">
-    ${[['Make.com','Week 1','https://make.com'],['n8n','Week 1','https://n8n.io'],['Zapier','Week 1','https://zapier.com'],['Postman','Week 1','https://postman.com'],['HubSpot','Week 1','https://hubspot.com'],['Webhooks / REST APIs','Week 1','']].map(([name,week,url])=>`
-    <div style="padding:10px 12px;background:var(--bg2);border-radius:var(--rs)">
-      <div style="font-size:13px;font-weight:600;color:var(--text)">${url?`<a href="${url}" target="_blank">${name}</a>`:name}</div>
-      <div style="font-size:11px;color:var(--text3);margin-top:2px">${week}</div>
-    </div>`).join('')}
-  </div>
+  <div class="card" id="tools-auto"></div>
 
   <div class="sec-label">AI APIs & Models</div>
-  <div class="card" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px">
-    ${[['Claude API','Week 1','https://console.anthropic.com'],['OpenAI API','Week 1','https://platform.openai.com'],['LangChain','Week 4','https://langchain.com'],['LangGraph','Week 5','https://langchain-ai.github.io/langgraph/'],['crewAI','Week 6','https://crewai.com']].map(([name,week,url])=>`
-    <div style="padding:10px 12px;background:var(--bg2);border-radius:var(--rs)">
-      <div style="font-size:13px;font-weight:600;color:var(--text)"><a href="${url}" target="_blank">${name}</a></div>
-      <div style="font-size:11px;color:var(--text3);margin-top:2px">${week}</div>
-    </div>`).join('')}
-  </div>
+  <div class="card" id="tools-ai"></div>
 
   <div class="sec-label">Code & Development</div>
-  <div class="card" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px">
-    ${[['Python','Weeks 3–4','https://python.org'],['Claude Code','Week 3','https://claude.ai/code'],['Cursor','Week 3','https://cursor.sh'],['Replit','Week 3','https://replit.com'],['GitHub','Ongoing','https://github.com/ckaplivsky-lab']].map(([name,week,url])=>`
-    <div style="padding:10px 12px;background:var(--bg2);border-radius:var(--rs)">
-      <div style="font-size:13px;font-weight:600;color:var(--text)"><a href="${url}" target="_blank">${name}</a></div>
-      <div style="font-size:11px;color:var(--text3);margin-top:2px">${week}</div>
-    </div>`).join('')}
-  </div>
+  <div class="card" id="tools-code"></div>
 
-  <div class="sec-label">Analytics & Data</div>
-  <div class="card" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px">
-    ${[['Google Analytics 4','Week 8','https://analytics.google.com'],['Mixpanel','Week 8','https://mixpanel.com'],['Airtable','Weeks 2–3','https://airtable.com'],['Notion','Ongoing','https://notion.so']].map(([name,week,url])=>`
-    <div style="padding:10px 12px;background:var(--bg2);border-radius:var(--rs)">
-      <div style="font-size:13px;font-weight:600;color:var(--text)"><a href="${url}" target="_blank">${name}</a></div>
-      <div style="font-size:11px;color:var(--text3);margin-top:2px">${week}</div>
-    </div>`).join('')}
-  </div>
+  <div class="sec-label">Lifecycle, Data & Analytics</div>
+  <div class="card" id="tools-data"></div>
 </div>
 
 <!-- PORTFOLIO PROJECTS TAB -->
 <div id="projects" class="mpanel">
-  <div style="font-size:18px;font-weight:600;margin-bottom:8px">6 Portfolio Projects</div>
-  <div class="phase-goal">All projects documented on GitHub with README, screenshots, and Loom demo. These are your proof of work for Tel Aviv interviews.</div>
+  <div style="font-size:18px;font-weight:600;margin-bottom:8px">8 Portfolio Projects</div>
+  <div class="phase-goal">All projects documented on GitHub with README, screenshots, and Loom demo. Two new builds (SQL Dashboard, A/B Test Framework) and a rebuilt hero project were added based on what actually shows up in lifecycle and AI-ops postings.</div>
 
   <div style="display:flex;flex-direction:column;gap:12px;margin-top:16px">
     <div class="card">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
         <div style="font-size:15px;font-weight:600;color:var(--text)">1. AI Customer Support Bot</div>
-        <span class="pchip p1">Week 2</span>
+        <span class="pchip p1">Week 1</span>
       </div>
       <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Automated customer support flow that receives incoming messages via webhook, passes them to Claude API for intelligent responses, and routes replies back through Make.</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <span class="ttype learn">Make</span><span class="ttype learn">Claude API</span><span class="ttype learn">Webhook</span>
-      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">Make</span><span class="ttype learn">Claude API</span><span class="ttype learn">Webhook</span></div>
     </div>
 
     <div class="card">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
         <div style="font-size:15px;font-weight:600;color:var(--text)">2. Lead Research Agent</div>
-        <span class="pchip p2">Week 4</span>
+        <span class="pchip p2">Week 3</span>
       </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Python script reads company names from CSV, calls OpenAI to generate 3-sentence research briefs, saves enriched output to new CSV, and POSTs results to a Make webhook for CRM logging.</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <span class="ttype learn">Python</span><span class="ttype learn">OpenAI</span><span class="ttype learn">Make</span>
-      </div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Python script reads company names from CSV, calls Claude API to generate 3-sentence research briefs, saves enriched output to new CSV, and POSTs results to a Make webhook for CRM logging.</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">Python</span><span class="ttype learn">Claude API</span><span class="ttype learn">Make</span></div>
     </div>
 
     <div class="card">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
-        <div style="font-size:15px;font-weight:600;color:var(--text)">3. Internal Knowledge Agent</div>
+        <div style="font-size:15px;font-weight:600;color:var(--text)">3. AI-Native Outbound Agent</div>
+        <span class="pchip p3">Week 4</span>
+      </div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Clay enriches and scores a target company list, Claude API writes a personalized outreach draft for each one, and n8n routes drafts to Gmail for review — the exact "intent-triggered outbound in Clay, agents in Claude and n8n" stack named in AI Growth Marketing job postings.</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">Clay</span><span class="ttype learn">Claude API</span><span class="ttype learn">n8n</span></div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+        <div style="font-size:15px;font-weight:600;color:var(--text)">4. Vibe-Coded Campaign Page</div>
         <span class="pchip p3">Week 5</span>
       </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">RAG pipeline that ingests internal documents, stores embeddings in a vector database, and answers natural language questions via a Slack bot — so teams can query their own knowledge base.</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <span class="ttype learn">LangChain</span><span class="ttype learn">n8n</span><span class="ttype learn">Slack</span><span class="ttype learn">ChromaDB</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
-        <div style="font-size:15px;font-weight:600;color:var(--text)">4. Sales Outreach Agent</div>
-        <span class="pchip p3">Week 6</span>
-      </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Multi-agent system built with crewAI where one agent researches target companies, a second writes personalized outreach emails, and a third routes approved messages through n8n to Gmail.</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <span class="ttype learn">crewAI</span><span class="ttype learn">OpenAI</span><span class="ttype learn">n8n</span>
-      </div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">A full campaign landing page — hero, value props, social proof, CTA, working email capture — built entirely by describing it in natural language in Lovable and deployed live. Direct proof of "vibe-coded in Lovable or Replit" and "pages and campaigns you spin up yourself instead of waiting on anyone."</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">Lovable</span><span class="ttype learn">Vibe Coding</span><span class="ttype learn">Make</span></div>
     </div>
 
     <div class="card" style="border-color:var(--blue)">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
-        <div style="font-size:15px;font-weight:600;color:var(--text)">5. AI Lifecycle Campaign System ⭐ Hero Project</div>
-        <span class="pchip p4">Weeks 7–8</span>
+        <div style="font-size:15px;font-weight:600;color:var(--text)">5. AI-Personalized Lifecycle Engine ⭐ Hero Project</div>
+        <span class="pchip p4">Week 7</span>
       </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">End-to-end lifecycle marketing automation: HubSpot captures leads → Make triggers Claude API to generate personalized email sequences → campaigns sent automatically based on user behaviour signals.</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <span class="ttype learn">Make</span><span class="ttype learn">Claude API</span><span class="ttype learn">HubSpot</span>
-      </div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Rebuilt from a generic HubSpot flow into an actual lifecycle stack: HubSpot captures and scores leads → a Braze trial account runs real segmentation and a trigger-based journey (welcome → nudge → win-back) → Claude API generates personalized copy per segment. Directly mirrors what Braze/Iterable/Customer.io-based lifecycle roles ask for.</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">HubSpot</span><span class="ttype learn">Braze</span><span class="ttype learn">Claude API</span></div>
     </div>
 
     <div class="card">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
-        <div style="font-size:15px;font-weight:600;color:var(--text)">6. Maven Cohort Project</div>
-        <span class="pchip p4">Weeks 8–9</span>
+        <div style="font-size:15px;font-weight:600;color:var(--text)">6. SQL Marketing Analytics Dashboard <span style="color:var(--blue-text);font-weight:400">— new</span></div>
+        <span class="pchip p4">Week 6</span>
       </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Capstone project built during the Maven Actionable AI for Marketers cohort with Britney Muller. Details TBD based on cohort curriculum.</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <span class="ttype learn">Maven</span><span class="ttype learn">AI Marketing</span>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Sample marketing funnel and cohort data loaded into a free BigQuery sandbox, queried for conversion rate by channel and retention by cohort, visualized in a Looker Studio dashboard. SQL came up constantly in lifecycle and ops postings and paid a real premium — this closes that gap directly.</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">SQL</span><span class="ttype learn">BigQuery</span><span class="ttype learn">Looker Studio</span></div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+        <div style="font-size:15px;font-weight:600;color:var(--text)">7. A/B Test Framework <span style="color:var(--blue-text);font-weight:400">— new</span></div>
+        <span class="pchip p4">Week 6</span>
       </div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">A small experiment-design toolkit: hypothesis + metric + sample-size template, plus a statistical-significance calculator applied to a real or simulated subject-line test. "Experimentation rigor" showed up explicitly in multiple lifecycle job descriptions.</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">Python</span><span class="ttype learn">Statistics</span></div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+        <div style="font-size:15px;font-weight:600;color:var(--text)">8. Marketing Ops Audit Agent (Capstone ⭐)</div>
+        <span class="pchip p4">Week 8</span>
+      </div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:8px">Intake form → n8n pulls public data (website, LinkedIn, job postings) → Claude analyses marketing gaps → recommends top 5 workflows with ROI estimates → PDF report emailed automatically. Your consulting pitch to any company.</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="ttype learn">n8n</span><span class="ttype learn">Claude API</span><span class="ttype learn">Typeform</span><span class="ttype learn">PDF export</span></div>
     </div>
   </div>
 
   <div class="sec-label">End-of-Sprint Deliverables</div>
   <div class="card" style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text2)">
-    <div>🌐 <strong style="color:var(--text)">Interactive Resume</strong> — Web app hosted at <a href="https://ckaplivsky-lab.github.io/portfolio" target="_blank">ckaplivsky-lab.github.io/portfolio</a> with photo, bio, project cards, Loom demos, cert badges, contact button</div>
+    <div>🌐 <strong style="color:var(--text)">Interactive Resume</strong> — Web app hosted at <a href="https://ckaplivsky-lab.github.io/portfolio" target="_blank">ckaplivsky-lab.github.io/portfolio</a> with photo, bio, 8 project cards, Loom demos, cert badges, contact button</div>
     <div>💼 <strong style="color:var(--text)">LinkedIn</strong> — Positioned as AI automation specialist, not enthusiast</div>
     <div>🎥 <strong style="color:var(--text)">Loom Cover Letters</strong> — Video walkthroughs of your projects tailored to each company</div>
     <div>📄 <strong style="color:var(--text)">30-Day Automation Plan</strong> — Custom doc built for each target company showing how you'd add value immediately</div>
@@ -322,10 +310,10 @@ footer{text-align:center;padding:24px 16px;font-size:12px;color:var(--text3)}
 </div>
 
 </main>
-<footer>Chelsea's AI Sprint · Jun 15 – Aug 20, 2026 · Tel Aviv bound 🇮🇱</footer>
+<footer>Chelsea's AI Sprint · Jun 15 – Sep 2, 2026 · Tel Aviv bound 🇮🇱</footer>
 <script>
 const WEEKS=[
-{num:1,dates:"Jun 15–20",title:"Make.com Foundations + Zapier + n8n + Webhooks",goal:"By Saturday: Make Academy done, Zapier certified, n8n installed, webhooks understood, Postman set up, 2 automations built and working.",days:[
+{num:1,dates:"Jun 15–Jul 10",title:"Make/Zapier/n8n Foundations + Claude API + Portfolio Piece 1",goal:"Foundations through your first published portfolio piece. Days 1–7 unchanged from before. Day 8 trimmed (OpenAI-specific course dropped). Days 9–10 finish Claude API tool use and ship Portfolio Piece 1.",days:[
 {day:1,date:"Mon Jun 15",focus:"Make Academy + first scenario ✅ DONE",phase:"p1",done:true,tasks:[
 {type:"learn",text:'Sign up at <a href="https://www.make.com/en/register" target="_blank">make.com/en/register</a> (use your GitHub login) ✅'},
 {type:"learn",text:'Sign up at <a href="https://platform.openai.com" target="_blank">platform.openai.com</a> + add $10 API credits ✅'},
@@ -339,10 +327,10 @@ const WEEKS=[
 {type:"learn",text:'Read: <a href="https://www.make.com/en/help/tools/webhooks" target="_blank">What is a webhook?</a> (Make docs, ~20 min)'},
 {type:"build",text:"Add a filter to yesterday's Gmail → Sheets scenario: only log emails from a specific sender"},
 {type:"build",text:"Build: Google Form submission → Make sends a Slack notification with the form data formatted nicely"},
-],note:"Saturdays are lighter. Push hard Mon–Fri."},
-{day:3,date:"Wed Jun 17",focus:"Make — HTTP module + OpenAI + n8n setup",phase:"p1",tasks:[
+]},
+{day:3,date:"Wed Jun 17",focus:"Make — HTTP module + Claude + n8n setup",phase:"p1",tasks:[
 {type:"learn",text:'Complete "Working with APIs and HTTP" in <a href="https://academy.make.com/bundles/automation-to-ai-agents-foundation" target="_blank">Make Academy</a>'},
-{type:"build",text:'Build: Google Form → Make sends text to OpenAI API (HTTP module + your OpenAI API key) → OpenAI summarizes → summary emailed to submitter'},
+{type:"build",text:'Build: Google Form → Make sends text to Claude API (HTTP module + your Anthropic API key) → Claude summarizes → summary emailed to submitter'},
 {type:"build",text:'Test with 3 different inputs. Fix errors. This is your first real AI automation.'},
 {type:"learn",text:'Sign up at <a href="https://app.n8n.cloud/register" target="_blank">app.n8n.cloud/register</a> (free trial)'},
 {type:"learn",text:'Start n8n Level 1 at <a href="https://docs.n8n.io/courses/level-one/" target="_blank">docs.n8n.io/courses/level-one</a> — Chapters 1 and 2'},
@@ -363,23 +351,19 @@ const WEEKS=[
 {type:"learn",text:'Sign up at <a href="https://www.hubspot.com/products/crm" target="_blank">hubspot.com/products/crm</a> (free CRM)'},
 {type:"build",text:'Build first Zap: new Google Sheets row → sends a Slack message'},
 {type:"build",text:'Build: new Typeform response → Zapier logs to a Google Sheet'},
-{type:"build",text:'Build: lead capture form → Zapier sends name + company to OpenAI → OpenAI writes personalized 2-sentence intro → logs to Google Sheets CRM'},
+{type:"build",text:'Build: lead capture form → Zapier sends name + company to Claude API → Claude writes personalized 2-sentence intro → logs to Google Sheets CRM'},
 {type:"build",text:'Add Zapier filter: only process leads from companies with more than 10 employees'},
 {type:"build",text:'Build: form submission → Zapier creates HubSpot contact → sends welcome email → logs to Google Sheet'},
-{type:"build",text:'Add OpenAI step: OpenAI personalizes the welcome email based on company name'},
-{type:"build",text:'Use Postman to call the OpenAI API directly: set Authorization header, JSON body, get response'},
-{type:"build",text:'Use Postman to call Claude API at https://api.anthropic.com/v1/messages — set x-api-key and anthropic-version headers. Compare structure to OpenAI.'},
+{type:"build",text:'Use Postman to call Claude API at https://api.anthropic.com/v1/messages — set x-api-key and anthropic-version headers.'},
 {type:"learn",text:'Write 5 bullet points: what Make does that Zapier doesn\'t, and vice versa. Save in Notion.'},
 ]},
-{day:6,date:"Sat Jun 20",focus:"Saturday — review + Make vs Zapier comparison + LinkedIn",phase:"sat",tasks:[
+{day:6,date:"Sat Jun 20",focus:"Review + Make vs Zapier comparison + LinkedIn",phase:"sat",tasks:[
 {type:"build",text:'Recreate the Zapier lead enrichment workflow in Make from scratch. Time yourself. Write comparison: what\'s easier in Make vs Zapier. This becomes an interview talking point.'},
 {type:"build",text:'Polish your best Make scenario — clean up module labels, add notes'},
-{type:"publish",text:'LinkedIn post: "Week 1 done. I built automations in Make, Zapier, and n8n this week — connecting Gmail, Google Sheets, Slack, Notion, and HubSpot. Here\'s what surprised me most..." Be specific and post a screenshot.'},
+{type:"publish",text:'LinkedIn post: "Week 1 done. I built automations in Make, Zapier, and n8n this week." Be specific and post a screenshot.'},
 {type:"publish",text:'Add Make, Zapier, n8n, HubSpot to your LinkedIn Skills section'},
-{type:"build",text:'Write a 5-line case study for your best build: Problem → Solution → Tools → How it works → What I\'d scale next. Save in Notion. This is your documentation habit.'},
-],note:"Saturday rhythm: review what you built, reflect on what you learned, post on LinkedIn, then rest."}
-]},
-{num:2,dates:"Jun 22–27",title:"n8n Complete + Claude API Deep Dive + Prompt Engineering",goal:"By Saturday: n8n Level 2 complete, Claude API called directly, prompt engineering cert done, portfolio piece 1 built.",days:[
+{type:"build",text:'Write a 5-line case study for your best build: Problem → Solution → Tools → How it works → What I\'d scale next.'},
+],note:"This Saturday already happened before the schedule was restructured — left as-is."},
 {day:7,date:"Mon Jun 22",focus:"n8n Level 2 complete + webhook mastery",phase:"p1",tasks:[
 {type:"learn",text:'Complete n8n Level 2 remaining chapters at <a href="https://docs.n8n.io/courses/level-two/" target="_blank">docs.n8n.io/courses/level-two</a>'},
 {type:"build",text:'Build: webhook in Make receives JSON → processes it → routes to Slack AND logs to Google Sheets based on a condition'},
@@ -387,321 +371,252 @@ const WEEKS=[
 {type:"build",text:'Add error handling to n8n webhook: if Claude API fails, send Slack alert'},
 {type:"learn",text:'Understand GET vs POST vs PUT vs DELETE. Write 5-line summary in Notion.'},
 ]},
-{day:8,date:"Tue Jun 23",focus:"Prompt engineering — DeepLearning.AI certs",phase:"claude",tasks:[
-{type:"learn",text:'Start and complete <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank">ChatGPT Prompt Engineering for Developers</a> — all lessons (free, ~2 hrs)'},
-{type:"learn",text:'Start <a href="https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/" target="_blank">Building Systems with the ChatGPT API</a> — complete first half (free)'},
+{day:8,date:"Tue Jul 8",focus:"Prompt engineering fundamentals (trimmed)",phase:"claude",tasks:[
 {type:"learn",text:'Read: <a href="https://docs.anthropic.com/en/api/messages" target="_blank">Anthropic Messages API overview</a> (30 min)'},
 {type:"build",text:'Open <a href="https://claude.ai" target="_blank">claude.ai</a> and write 5 different system prompts for an AI customer support bot. Test each. Note which works best and why.'},
-]},
-{day:9,date:"Wed Jun 24",focus:"Claude API raw calls + tool use + OpenAI Assistants",phase:"claude",tasks:[
+],note:"Trimmed: ChatGPT Prompt Engineering for Developers dropped — you already worked through the 9-chapter Anthropic prompt engineering tutorial, which is more relevant since everything else here runs on Claude."},
+{day:9,date:"Thu Jul 9",focus:"Claude API tool use + Postman",phase:"claude",tasks:[
 {type:"learn",text:'Read: <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" target="_blank">Anthropic Tool Use / Function Calling docs</a> (30 min)'},
-{type:"learn",text:'Complete <a href="https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/" target="_blank">Building Systems with the ChatGPT API</a> — remaining lessons'},
 {type:"build",text:'Use Postman to call Claude API with a detailed system prompt. Test 5 different user messages. Note how changing the system prompt changes quality.'},
 {type:"build",text:'Build in Make: HTTP module calls Claude API with a system prompt → response logged to Google Sheets'},
-{type:"build",text:'Create OpenAI Assistant at <a href="https://platform.openai.com/assistants" target="_blank">platform.openai.com/assistants</a>: upload a PDF, ask 5 questions. Understand how retrieval works.'},
+{type:"learn",text:'Write 5 bullet notes: what tool use unlocks that a plain completion can\'t.'},
 ]},
-{day:10,date:"Thu Jun 25",focus:"Build portfolio piece 1: AI Customer Support Bot",phase:"claude",tasks:[
+{day:10,date:"Fri Jul 10",focus:"Build + ship Portfolio Piece 1: AI Customer Support Bot",phase:"claude",tasks:[
 {type:"build",text:'Build Portfolio Piece 1: Google Form → Make webhook → Claude API processes question with detailed system prompt → response emailed back to submitter'},
 {type:"build",text:'Test with 10 different customer questions. Fix edge cases. Improve system prompt until quality is consistently good.'},
 {type:"build",text:'Document Portfolio Piece 1 with case study template: Problem → Solution → Tools → How it works → Results → What I\'d scale next'},
 {type:"publish",text:'Push to <a href="https://github.com/ckaplivsky-lab" target="_blank">github.com/ckaplivsky-lab</a> with a clear README and screenshots'},
+{type:"publish",text:'LinkedIn post: "Portfolio piece 1 done: AI Customer Support Bot built with Make + Claude API."'},
+]}
 ]},
-{day:11,date:"Fri Jun 26",focus:"Claude Code install + Cursor + Replit",phase:"claude",tasks:[
+{num:2,dates:"Jul 13–17",title:"Claude Code + Cursor + Replit + Python Fundamentals",goal:"By Friday: Claude Code and Cursor in daily use, Python basics through loops and functions solid.",days:[
+{day:11,date:"Mon Jul 13",focus:"Claude Code + Cursor + Replit install",phase:"claude",tasks:[
 {type:"learn",text:'Install Claude Code: follow guide at <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank">docs.anthropic.com/en/docs/claude-code</a>'},
 {type:"learn",text:'Read: what is a CLAUDE.md file and how to use it. Create one in your project folder describing your codebase.'},
 {type:"learn",text:'Explore Claude Code for 1 hour: open your portfolio project folder, ask it to read files, make a small edit, see how it reasons. Try Plan Mode.'},
-{type:"learn",text:'Install Cursor at <a href="https://www.cursor.com" target="_blank">cursor.com</a> (free) — you will use this instead of VS Code for all Python work starting Week 3'},
-{type:"learn",text:'Sign up at <a href="https://replit.com" target="_blank">replit.com</a> (free). Create a new Python Repl. Run "Hello World". Get familiar with the browser-based environment.'},
-{type:"publish",text:'LinkedIn post: "Portfolio piece 1 done: AI Customer Support Bot built with Make + Claude API. I compared Claude vs GPT-4o — here\'s what I found: [your honest 3-sentence comparison]."'},
+{type:"learn",text:'Install Cursor at <a href="https://www.cursor.com" target="_blank">cursor.com</a> (free) — use this instead of VS Code for all Python work starting this week'},
+{type:"learn",text:'Sign up at <a href="https://replit.com" target="_blank">replit.com</a> (free). Create a new Python Repl. Run "Hello World".'},
 ]},
-{day:12,date:"Sat Jun 27",focus:"Saturday — review + Claude Code explore + LinkedIn",phase:"sat",tasks:[
+{day:12,date:"Tue Jul 14",focus:"Claude Code deep dive + review",phase:"claude",tasks:[
 {type:"build",text:'Spend 2 hours in Claude Code: open your Make scenario documentation, ask Claude Code to turn it into a proper README. Review and improve the output.'},
 {type:"publish",text:'Add Claude API, prompt engineering, Claude Code, Cursor to LinkedIn Skills'},
-{type:"publish",text:'Add Zapier certification to LinkedIn when complete'},
 {type:"build",text:'Review Portfolio Piece 1 README — would a recruiter understand it in 30 seconds? Fix anything unclear.'},
-],note:"Claude Code feels weird at first. Just explore — no pressure to build anything specific today."}
-]},
-{num:3,dates:"Jun 29–Jul 4",title:"Python Basics + Cursor + Claude Code Deep Dive",goal:"By Saturday: Python basics fully solid, Cursor in use, Claude Code used for real coding, first Python scripts pushed to GitHub.",days:[
-{day:13,date:"Mon Jun 29",focus:"Python setup in Cursor + variables + conditionals + loops",phase:"p2",tasks:[
-{type:"paid",text:'Subscribe to <a href="https://www.coursera.org/courseraplus" target="_blank">Coursera Plus</a> (~$49/mo). Enroll in <a href="https://www.coursera.org/specializations/python" target="_blank">Python for Everybody</a> by Dr. Chuck (University of Michigan). Start Course 1.'},
+],note:"Claude Code feels weird at first. Just explore — no pressure to build anything specific today."},
+{day:13,date:"Wed Jul 15",focus:"Python setup in Cursor + variables + conditionals + loops",phase:"p2",tasks:[
+{type:"paid",text:'Subscribe to <a href="https://www.coursera.org/courseraplus" target="_blank">Coursera Plus</a> (~$49/mo, one month is enough). Enroll in <a href="https://www.coursera.org/specializations/python" target="_blank">Python for Everybody</a> by Dr. Chuck. Start Course 1.'},
 {type:"learn",text:'Install Python 3 from <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a>. Open Cursor — use this as your editor for all Python work.'},
-{type:"learn",text:'Complete Python for Everybody Course 1 Week 1: Why Program + Variables and Expressions'},
-{type:"learn",text:'Complete Week 2: Conditional Execution (if/elif/else)'},
-{type:"learn",text:'Complete Week 3: Repeated Steps (for and while loops)'},
+{type:"learn",text:'Work through Course 1: Programming for Everybody — variables and expressions, conditional execution, and loops.'},
 {type:"build",text:'Write in Cursor: loop through 5 company names, print "Researching [company]...", add if/else for "Big company" check. Use Claude Code in Cursor\'s terminal to help debug.'},
 {type:"build",text:'Write: function greet_lead(name, company) that returns a formatted greeting. Call it 5 times.'},
 ]},
-{day:14,date:"Tue Jun 30",focus:"Python — functions + strings + lists + files",phase:"p2",tasks:[
-{type:"learn",text:'Complete Course 1 Week 4: Functions. Week 5: Loops and Iteration (advanced).'},
-{type:"learn",text:'Complete Course 2 Week 1: Strings. Week 2: Lists.'},
+{day:14,date:"Thu Jul 16",focus:"Python — functions + strings + lists + files",phase:"p2",tasks:[
+{type:"learn",text:'Finish Course 1: Programming for Everybody — functions and more advanced iteration.'},
+{type:"learn",text:'Work through Course 2: Python Data Structures — strings and lists.'},
 {type:"build",text:'Write: takes a list of emails, filters out any without "@", converts to lowercase, prints clean list'},
 {type:"build",text:'Write: reads a text file line by line and prints each line with its line number'},
 {type:"build",text:'Use Claude Code to review your scripts and suggest improvements. Accept or reject — learn to work with it.'},
 ]},
-{day:15,date:"Wed Jul 1",focus:"Python — dictionaries + web data + requests library",phase:"p2",tasks:[
-{type:"learn",text:'Complete Course 2 Week 3: Dictionaries. Course 3 Week 1: Regular Expressions. Week 2: Networks and HTTP.'},
+{day:15,date:"Fri Jul 17",focus:"Python — dictionaries + web data + requests library",phase:"p2",tasks:[
+{type:"learn",text:'Finish Course 2: Python Data Structures — dictionaries. Start Course 3: Using Python to Access Web Data — regular expressions and networks/HTTP.'},
 {type:"build",text:'pip3 install requests'},
-{type:"build",text:'Write: call <a href="https://open-meteo.com/en/docs" target="_blank">open-meteo.com</a> weather API, print raw JSON response'},
-{type:"build",text:'Upgrade: parse the JSON, extract just temperature and wind speed, print in readable format'},
+{type:"build",text:'Write: call <a href="https://open-meteo.com/en/docs" target="_blank">open-meteo.com</a> weather API, parse the JSON, extract temperature and wind speed'},
 {type:"build",text:'Write: 3 lead dictionaries (name, company, email, score). Loop and print only score > 7.'},
-{type:"build",text:'Write: script reads a text file, saves a filtered version to a new file'},
-],note:"JSON parsing is the most important skill this week. Take your time here."},
-{day:16,date:"Thu Jul 2",focus:"Python — calling OpenAI + Claude APIs + saving to CSV",phase:"p2",tasks:[
-{type:"learn",text:'Complete Course 3 Week 3: Using Web Services and APIs'},
-{type:"build",text:'pip3 install openai anthropic'},
-{type:"build",text:'Write: script calls OpenAI API, takes company name as input, returns 3-sentence summary, saves to CSV with columns: company_name, summary, timestamp'},
-{type:"build",text:'Write: same script but using the Anthropic Python library to call Claude API. Compare outputs. Read: <a href="https://docs.anthropic.com/en/docs/quickstart" target="_blank">Anthropic Python SDK quickstart</a>'},
+{type:"publish",text:'LinkedIn post: "Week 2 done. I can now write Python that talks to APIs and Claude Code that helps me debug it."'},
+]}
+]},
+{num:3,dates:"Jul 20–24",title:"Python APIs + CSV + GenAI Cert + Portfolio Piece 2",goal:"By Friday: Lead Research Agent built and deployed, Generative AI for Everyone cert earned.",days:[
+{day:16,date:"Mon Jul 20",focus:"Python — calling Claude API + saving to CSV",phase:"p2",tasks:[
+{type:"learn",text:'Continue Course 3: Using Python to Access Web Data — using web services and APIs.'},
+{type:"learn",text:'Start Nate Herk n8n AI Agents course on YouTube (search "Nate Herk n8n"). Watch first 2 hours: agent fundamentals, HTTP Request node, workflow architecture.'},
+{type:"build",text:'pip3 install anthropic'},
+{type:"build",text:'Write: script calls Claude API via the Anthropic Python library, takes company name as input, returns 3-sentence summary, saves to CSV with columns: company_name, summary, timestamp. Read: <a href="https://docs.anthropic.com/en/docs/quickstart" target="_blank">Anthropic Python SDK quickstart</a>'},
 {type:"build",text:'Write: script with error handling — if API call fails, log the error and continue rather than crashing'},
 ]},
-{day:17,date:"Fri Jul 3",focus:"Claude Code deep dive + Replit deploy",phase:"p2",tasks:[
-{type:"learn",text:'Spend 2 focused hours with Claude Code: open your Python scripts folder, use Claude Code to refactor your CSV script, add error handling, improve the prompt. Practice Plan Mode.'},
-{type:"learn",text:'Learn CLAUDE.md deeply: update yours with your project structure, coding preferences, and what you\'ve built so far'},
-{type:"build",text:'Deploy your company research script on Replit: create new Python Repl at <a href="https://replit.com" target="_blank">replit.com</a>, paste your script, run it in the browser, get the shareable URL. This is how you share live demos.'},
-{type:"build",text:'Test Replit URL with a friend or on your phone — confirm it runs'},
+{day:17,date:"Tue Jul 21",focus:"Claude Code deep dive + Replit deploy",phase:"p2",tasks:[
+{type:"paid",text:'Buy n8n Masterclass 2026 by Dominik on Udemy (~$15 on sale). Start Sections 1-3. Covers Claude Code + n8n together.'},
+{type:"learn",text:'Spend 2 focused hours with Claude Code: refactor your CSV script, add error handling, improve the prompt. Practice Plan Mode.'},
+{type:"learn",text:'Update your CLAUDE.md with your project structure, coding preferences, and what you\'ve built so far'},
+{type:"build",text:'Deploy your company research script on Replit: paste your script, run it in the browser, get the shareable URL.'},
+{type:"build",text:'Test the Replit URL with a friend or on your phone — confirm it runs'},
 ]},
-{day:18,date:"Sat Jul 4",focus:"Saturday — GitHub push + Python review + notes",phase:"sat",tasks:[
+{day:18,date:"Wed Jul 22",focus:"GitHub push + Python review + database basics",phase:"p2",tasks:[
 {type:"publish",text:'Push all Python scripts to <a href="https://github.com/ckaplivsky-lab" target="_blank">github.com/ckaplivsky-lab</a> in a folder called "python-basics"'},
-{type:"publish",text:'LinkedIn post: "Week 3 done. I can now write Python scripts that call AI APIs directly. Built a company research tool that outputs structured CSV data. Here\'s how it works..."'},
-{type:"learn",text:'Complete Course 3 Weeks 4–5: Using Databases with Python'},
-{type:"build",text:'Update your CLAUDE.md file with everything you\'ve built so far — Claude Code needs full context to help you effectively'},
-]}
+{type:"learn",text:'Skim the start of Course 4: Using Databases with Python (brief pass — you\'ll use SQL more directly later in the sprint)'},
+{type:"build",text:'Update your CLAUDE.md file with everything you\'ve built so far'},
 ]},
-{num:4,dates:"Jul 6–11",title:"Python APIs + LangChain + GenAI Cert + Portfolio Piece 2",goal:"By Saturday: Lead Research Agent built and deployed, LangChain installed and understood, Generative AI for Everyone cert earned, IBM cert started.",days:[
-{day:19,date:"Mon Jul 6",focus:"Python + Make webhook pipeline + GenAI cert start",phase:"p2",tasks:[
-{type:"paid",text:'Enroll in <a href="https://www.coursera.org/learn/generative-ai-for-everyone" target="_blank">Generative AI for Everyone</a> by Andrew Ng on Coursera. Start Week 1: Introduction to Generative AI.'},
-{type:"learn",text:'Complete GenAI for Everyone Week 1: What is generative AI, how LLMs work, capabilities and limitations'},
-{type:"learn",text:'Complete GenAI for Everyone Week 2: Generative AI projects — how to spot AI opportunities in a business'},
-{type:"build",text:'Build pipeline: Python researches company via OpenAI → POSTs result to Make webhook → Make routes to Slack + Google Sheets'},
+{day:19,date:"Thu Jul 23",focus:"Generative AI for Everyone start + pipeline build",phase:"p2",tasks:[
+{type:"paid",text:'Enroll in <a href="https://www.coursera.org/learn/generative-ai-for-everyone" target="_blank">Generative AI for Everyone</a> by Andrew Ng. Start Week 1.'},
+{type:"learn",text:'Complete Week 1: What is generative AI, how LLMs work, capabilities and limitations. Week 2: Spotting AI opportunities in a business.'},
+{type:"build",text:'Build pipeline: Python researches company via Claude API → POSTs result to Make webhook → Make routes to Slack + Google Sheets. This is a demand gen automation — it enriches inbound leads automatically, which is exactly what Jurni and Base44 need for their pipeline.'},
 {type:"build",text:'Add CLI interface: run as python enrich.py "Company Name" → prints results + sends to Make'},
 ]},
-{day:20,date:"Tue Jul 7",focus:"GenAI cert complete + Build portfolio piece 2",phase:"p2",tasks:[
-{type:"learn",text:'Complete GenAI for Everyone Week 3: AI and Society, responsible AI. Take final quiz and earn certificate.'},
-{type:"publish",text:'Add "Generative AI for Everyone — DeepLearning.AI" to LinkedIn certifications immediately'},
-{type:"build",text:'Build Portfolio Piece 2: Lead Research Agent. Reads company names from CSV → calls OpenAI for 3-sentence brief → saves all to new CSV → POSTs to Make webhook'},
-{type:"build",text:'Add error handling: if API call fails for one company, log error and continue to next'},
-{type:"build",text:'Test with 10 real company names. Improve prompt based on output quality.'},
-]},
-{day:21,date:"Wed Jul 8",focus:"IBM cert start + LangChain intro",phase:"p2",tasks:[
-{type:"paid",text:'Enroll in <a href="https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai" target="_blank">IBM AI Developer Professional Certificate</a> on Coursera (Coursera Plus). Start Module 1: Introduction to Artificial Intelligence.'},
-{type:"learn",text:'Complete IBM Module 1 fully today'},
-{type:"learn",text:'pip3 install langchain langchain-openai'},
-{type:"learn",text:'Start <a href="https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/" target="_blank">Functions, Tools and Agents with LangChain</a> — first 3 lessons (free)'},
-{type:"build",text:'Write LangChain script to call Claude or OpenAI. Compare to raw API call — what does LangChain abstract away? Write it down.'},
-]},
-{day:22,date:"Thu Jul 9",focus:"LangChain tools + agents + IBM Module 2",phase:"p2",tasks:[
-{type:"learn",text:'Complete <a href="https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/" target="_blank">Functions, Tools and Agents with LangChain</a> — all remaining lessons'},
-{type:"learn",text:'IBM Module 2: Machine Learning with Python'},
-{type:"build",text:'Build LangChain agent with 2 tools: (1) company → industry lookup function, (2) lead score calculator. Test with 5 different inputs. Watch how LangChain decides when to call each tool.'},
-]},
-{day:23,date:"Fri Jul 10",focus:"Portfolio piece 2 complete + GitHub + IBM",phase:"p2",tasks:[
-{type:"build",text:'Document Portfolio Piece 2 with case study template. Push to GitHub with README and output screenshot.'},
-{type:"publish",text:'LinkedIn post: "Portfolio piece 2 done: Lead Research Agent in Python. Researches 10 companies automatically using the OpenAI API. Here\'s how it works..." Include screenshot of output CSV.'},
-{type:"learn",text:'IBM Modules 3–5: Deep Learning, Computer Vision, Natural Language Processing'},
-]},
-{day:24,date:"Sat Jul 11",focus:"Saturday — IBM cert + Postman practice + review",phase:"sat",tasks:[
-{type:"learn",text:'IBM Module 6: AI Ethics and Responsible AI. Submit IBM cert for final assessment.'},
-{type:"build",text:'Use Postman to test 3 different API endpoints from this week. Practice switching between OpenAI and Claude.'},
-{type:"publish",text:'Review both portfolio pieces — are READMEs clear? Would a recruiter understand them? Fix anything unclear.'},
+{day:20,date:"Fri Jul 24",focus:"GenAI cert complete + Portfolio Piece 2 build",phase:"p2",tasks:[
+{type:"learn",text:'Complete Week 3: AI and Society, responsible AI. Take final quiz and earn certificate.'},
+{type:"publish",text:'Add "Generative AI for Everyone — DeepLearning.AI" to LinkedIn certifications'},
+{type:"build",text:'Build Portfolio Piece 2: Lead Research Agent. Reads company names from CSV → calls Claude API for 3-sentence brief → saves all to new CSV → POSTs to Make webhook'},
+{type:"build",text:'Test with 10 real company names. Add error handling: if one call fails, log and continue.'},
+{type:"publish",text:'Push to GitHub with README. LinkedIn post: "Portfolio piece 2 done: Lead Research Agent."'},
 ]}
 ]},
-{num:5,dates:"Jul 13–18",title:"RAG Pipelines + LangChain Advanced + IBM Cert + Portfolio Piece 3",goal:"By Saturday: RAG pipeline built, portfolio piece 3 live as Slack bot, IBM cert earned, LangGraph understood.",days:[
-{day:25,date:"Mon Jul 13",focus:"RAG concepts + LangChain Chat with Your Data",phase:"p3",tasks:[
-{type:"learn",text:'Start <a href="https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/" target="_blank">LangChain: Chat with Your Data</a> — Lessons 1–5: Document Loading, Splitting, Vectorstores, Retrieval, Q&A (free)'},
-{type:"build",text:'pip3 install chromadb langchain-community pypdf'},
-{type:"build",text:'Build RAG pipeline: load PDF → split into chunks → embed with OpenAI → store in ChromaDB → query it with questions'},
-{type:"learn",text:'Understand: what is a vector? An embedding? A vector database? Write a 5-line plain English explanation in your notes.'},
+{num:4,dates:"Jul 27–31",title:"Clay + Agentic Outbound + Portfolio Piece 3",goal:"By Friday: Clay enrichment workflow built, an honest opinion on agent-builder tools formed, AI-Native Outbound Agent shipped.",days:[
+{day:21,date:"Mon Jul 27",focus:"Clay signup + GTM automation basics",phase:"p3",tasks:[
+{type:"learn",text:'Sign up free at <a href="https://university.clay.com" target="_blank">Clay University</a>. Start "Clay 101: GTM Automation" — Clay is named directly in AI Growth Marketing job postings alongside n8n and Claude.'},
+{type:"build",text:'Sign up for a free Clay account at <a href="https://www.clay.com" target="_blank">clay.com</a> and follow along building your first enrichment table'},
+{type:"learn",text:'20-minute skim only: what LangChain is and why it exists (you will not build with it this sprint — it is an engineering-framework tool, not a marketer-builder one). Write 2-3 sentences on what it is so you can speak to it if it comes up.'},
 ]},
-{day:26,date:"Tue Jul 14",focus:"RAG + conversational memory + LangChain for LLM Dev",phase:"p3",tasks:[
-{type:"learn",text:'Complete <a href="https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/" target="_blank">LangChain Chat with Your Data</a> Lessons 6–7: Chat and Conclusion'},
-{type:"learn",text:'Start and complete <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/" target="_blank">LangChain for LLM Application Development</a> — all lessons (free, ~2 hrs)'},
-{type:"build",text:'Add conversation memory to RAG pipeline — follow-up questions now work naturally'},
-{type:"build",text:'Test with 20 different questions. Note failures. Try improving chunk size or prompt.'},
+{day:22,date:"Tue Jul 28",focus:"Clay enrichment workflow",phase:"p3",tasks:[
+{type:"learn",text:'Continue Clay University: enrichment, waterfalls, and AI-powered lead research lessons'},
+{type:"build",text:'Build a Clay table that enriches a list of company names with firmographic data + AI research — reuse companies.csv from Portfolio Piece 2 as your input list'},
+{type:"build",text:'Export enriched results from Clay and connect them into your existing Make/n8n pipeline'},
 ]},
-{day:27,date:"Wed Jul 15",focus:"Build portfolio piece 3: Internal Knowledge Agent",phase:"p3",tasks:[
-{type:"build",text:'Build Portfolio Piece 3: upload 3–5 real documents → LangChain RAG agent answers questions → connected to n8n → Slack message triggers agent → response posted back to Slack'},
-{type:"build",text:'Build sequential LangChain chain: input company name → Chain 1 researches → Chain 2 writes cold email → Chain 3 scores quality'},
-{type:"build",text:'Add memory to the chain: agent remembers previously researched companies'},
-{type:"learn",text:'IBM AI Developer cert — submit for final assessment at <a href="https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai" target="_blank">Coursera</a>'},
+{day:23,date:"Wed Jul 29",focus:"Form real opinions: agent-builder tools",phase:"p3",tasks:[
+{type:"learn",text:'Try one alternative no-code agent builder free tier — <a href="https://www.lindy.ai" target="_blank">Lindy</a> or <a href="https://www.gumloop.com" target="_blank">Gumloop</a> — and build one small workflow in it'},
+{type:"build",text:'Write down a real, specific opinion comparing it to n8n/Make: what felt like a genuine time-saver vs. what felt like demo-ware. This is a direct answer to "have opinions about what\\'s real vs. demo-ware" — a line pulled straight from a real job posting.'},
 ]},
-{day:28,date:"Thu Jul 16",focus:"IBM cert claim + portfolio piece 3 complete + LangGraph",phase:"p3",tasks:[
-{type:"publish",text:'Claim IBM AI Developer Professional Certificate when approved — add to LinkedIn immediately'},
-{type:"build",text:'Document Portfolio Piece 3 with case study template. Push to GitHub.'},
-{type:"publish",text:'Record 3-min Loom of RAG Slack bot. LinkedIn post: "Portfolio piece 3 done: AI agent that answers questions from internal documents, deployed as a Slack bot. 3-min demo:" Include Loom link.'},
-{type:"learn",text:'Start <a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank">AI Agents in LangGraph</a> — all lessons (free, ~3 hrs)'},
+{day:24,date:"Thu Jul 30",focus:"Build Portfolio Piece 3: AI-Native Outbound Agent",phase:"p3",tasks:[
+{type:"build",text:'Build the pipeline: Clay enriches + scores a target company list → Claude API writes a personalized outreach draft for each → n8n or Make sends the draft to Gmail (draft mode only, never auto-send)'},
+{type:"build",text:'Test with 5-10 real target companies. Review draft quality and refine the Claude prompt based on results.'},
 ]},
-{day:29,date:"Fri Jul 17",focus:"LangGraph complete + agents with real tools",phase:"p3",tasks:[
-{type:"learn",text:'Complete any remaining <a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank">AI Agents in LangGraph</a> lessons'},
-{type:"build",text:'Build LangGraph workflow: Research node → Writing node with state passing between them'},
-{type:"build",text:'Add conditional edge: if research finds insufficient info, loop back and search again before writing'},
-{type:"build",text:'Build LangChain agent with 2 tools: (1) DuckDuckGo web search, (2) company → industry lookup. Let agent choose which to use. Test with 5 queries.'},
-{type:"learn",text:'Read about ReAct prompting pattern — search on <a href="https://www.perplexity.ai" target="_blank">perplexity.ai</a>'},
-]},
-{day:30,date:"Sat Jul 18",focus:"Saturday — SQL start + LinkedIn update",phase:"sat",tasks:[
-{type:"learn",text:'Start SQL: go to <a href="https://mode.com/sql-tutorial/" target="_blank">mode.com/sql-tutorial</a> — complete Basic SQL section: SELECT, FROM, WHERE, LIMIT (~1 hr)'},
-{type:"publish",text:'LinkedIn post: "I now understand how AI agents work under the hood — they reason, use tools, and loop back when they need more info. Built them this week with LangChain and LangGraph."'},
-{type:"publish",text:'Update LinkedIn: 3 portfolio projects now listed with Loom links and GitHub links'},
+{day:25,date:"Fri Jul 31",focus:"AI-Native Outbound Agent polish + publish",phase:"p3",tasks:[
+{type:"build",text:'Add error handling: if Clay enrichment or Claude drafting fails for one company, log it and continue rather than stopping the batch'},
+{type:"build",text:'Document with case study template: Problem → Solution → Tools → How it works → Results'},
+{type:"publish",text:'Push to GitHub with README. LinkedIn post: "Portfolio piece 3 done: an AI-native outbound agent built with Clay, Claude, and n8n."'},
 ]}
 ]},
-{num:6,dates:"Jul 20–25",title:"crewAI + Hero Project + Portfolio Pieces 4 + 5",goal:"By Saturday: Portfolio pieces 4 and 5 both complete, crewAI cert done, hero project first full run working.",days:[
-{day:31,date:"Mon Jul 20",focus:"crewAI foundations + multi-agent systems",phase:"p3",tasks:[
-{type:"learn",text:'Start and complete <a href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank">Multi AI Agent Systems with crewAI</a> — all lessons (free, ~3 hrs)'},
-{type:"build",text:'pip3 install crewai'},
-{type:"build",text:'Build first crew: Researcher agent + Writer agent. Researcher finds info on a topic, Writer turns it into a summary. Test on 3 topics.'},
-{type:"build",text:'Add tools to Researcher: give it a web search tool. Watch it find real-time info.'},
-{type:"build",text:'Switch to hierarchical process: add Manager agent. Compare to sequential.'},
+{num:5,dates:"Aug 3–7",title:"Lovable Vibe-Coding + Portfolio Piece 4 + SQL Begins",goal:"By Friday: a real vibe-coded landing page shipped, SQL fundamentals underway.",days:[
+{day:26,date:"Mon Aug 3",focus:"Vibe-coding intro with Lovable",phase:"p3",tasks:[
+{type:"learn",text:'Start <a href="https://www.coursera.org/learn/vibe-coding-with-lovable-from-idea-to-app" target="_blank">Vibe Coding with Lovable: From Idea to App</a> on Coursera (included with your Coursera Plus subscription, ~2 hours, shareable certificate)'},
+{type:"build",text:'Create a free account at <a href="https://lovable.dev" target="_blank">lovable.dev</a> and build your first tiny app or page just by describing it in plain language'},
 ]},
-{day:32,date:"Tue Jul 21",focus:"Build portfolio piece 4: Sales Outreach Agent",phase:"p3",tasks:[
-{type:"build",text:'Build Portfolio Piece 4: Agent 1 (Researcher) takes company domain + researches with web search. Agent 2 (Writer) writes personalized cold email. Agent 3 (Reviewer) scores quality and suggests improvements.'},
-{type:"build",text:'Connect to n8n: new Google Sheet row triggers crewAI → completed email posted back to Sheet'},
-{type:"build",text:'Test with 10 real companies. Improve agent prompts where quality is weak.'},
+{day:27,date:"Tue Aug 4",focus:"Vibe-coding complete + campaign page build",phase:"p3",tasks:[
+{type:"learn",text:'Finish the Lovable Coursera course and claim the certificate'},
+{type:"build",text:'Plan Portfolio Piece 4: a campaign landing page for a fictional (or one of your target companies\\') product launch — headline, value props, CTA, email capture form'},
 ]},
-{day:33,date:"Wed Jul 22",focus:"Portfolio piece 4 complete + hero project design",phase:"p3",tasks:[
-{type:"build",text:'Document Portfolio Piece 4. Push to GitHub.'},
-{type:"publish",text:'Record 3-min Loom of Sales Outreach Agent running live: show Sheet trigger, agents working, output email. LinkedIn post: "Portfolio piece 4 done: 3-agent AI system. crewAI + n8n. Demo:" Include Loom.'},
-{type:"build",text:'Design hero project in Notion: AI Lifecycle Campaign System. Draw full architecture: HubSpot → Claude API segmentation → email generation → Make sends → analytics. Map every tool and data flow.'},
-{type:"learn",text:'Set up HubSpot at <a href="https://www.hubspot.com/products/crm" target="_blank">hubspot.com</a>. Create 10 test contacts at different lifecycle stages: new lead, trial user, paying customer, churned.'},
+{day:28,date:"Wed Aug 5",focus:"Build Portfolio Piece 4: Vibe-Coded Campaign Page",phase:"p3",tasks:[
+{type:"build",text:'Build the full landing page in Lovable by describing sections in natural language — hero, features, social proof, CTA'},
+{type:"build",text:'Connect the email capture form to a Google Sheet or Make webhook so signups actually land somewhere real'},
 ]},
-{day:34,date:"Thu Jul 23",focus:"Hero project — AI segmentation + email generation",phase:"p3",tasks:[
-{type:"build",text:'Build AI segmentation: Python reads HubSpot contacts via API → sends each contact\'s data to Claude API → Claude assigns lifecycle stage + personalization note → writes back to HubSpot as custom property'},
-{type:"build",text:'Test with 10 contacts. Verify AI-assigned segments make sense.'},
-{type:"build",text:'Build email generation: Claude API generates personalized subject + body per segment using name, company, lifecycle stage → stores in Google Sheet with columns: contact_email, segment, subject, body, status (Draft/Approved/Sent)'},
+{day:29,date:"Thu Aug 6",focus:"Campaign page polish + publish",phase:"p3",tasks:[
+{type:"build",text:'Polish copy and layout. Deploy live and test the signup flow end to end.'},
+{type:"publish",text:'Document + push to GitHub. LinkedIn post: "Portfolio piece 4 done: a vibe-coded campaign landing page, built and shipped in Lovable."'},
 ]},
-{day:35,date:"Fri Jul 24",focus:"Hero project — Make orchestration + first full run",phase:"p3",tasks:[
-{type:"build",text:'Build Make scenario: watches Sheet for status="Approved" → sends email via Gmail → updates to "Sent" → logs to campaign performance sheet'},
-{type:"build",text:'Add Slack notification: when batch sent, Make posts summary to Slack with emails-sent count per segment'},
-{type:"build",text:'Run full pipeline end-to-end with 10 test contacts. Fix all errors. Goal: one complete working run.'},
+{day:30,date:"Fri Aug 7",focus:"SQL basics begin (Portfolio Piece 6 setup)",phase:"p4",tasks:[
+{type:"build",text:'Set up a free <a href="https://cloud.google.com/bigquery/docs/sandbox" target="_blank">BigQuery sandbox</a> account'},
+{type:"learn",text:'Work through the free <a href="https://mode.com/sql-tutorial/" target="_blank">Mode SQL tutorial</a> — SELECT, WHERE, GROUP BY, JOIN'},
+{type:"build",text:'Load a sample marketing funnel dataset (BigQuery has several public datasets) into your sandbox'},
+{type:"learn",text:'Start Course 5: Capstone — Retrieving, Processing, and Visualizing Data with Python (final course in the Python for Everybody specialization — needed for the full certificate)'},
+],note:"This is the SQL gap the research flagged — lifecycle and AI Ops postings ask for it constantly. Course 5 pairs naturally with this week's SQL/dashboard work since it covers the same retrieve-process-visualize pattern in Python."},
 ]},
-{day:36,date:"Sat Jul 25",focus:"Saturday — SQL intermediate + LinkedIn post",phase:"sat",tasks:[
-{type:"learn",text:'Complete Mode SQL Intermediate at <a href="https://mode.com/sql-tutorial/intro-to-intermediate-sql/" target="_blank">mode.com/sql-tutorial</a>: JOINs, GROUP BY, ORDER BY'},
-{type:"build",text:'Run hero project 2 more times. Fix remaining bugs.'},
-{type:"publish",text:'LinkedIn post: "Week 6 done. My hero project — an end-to-end AI lifecycle campaign system — is almost complete. Here\'s what it does..." Build in public.'},
-{type:"publish",text:'Update LinkedIn headline to: "AI Automation Specialist | Make · n8n · LangChain · crewAI · Claude API"'},
+{num:6,dates:"Aug 10–14",title:"SQL Dashboard + A/B Test Framework",goal:"By Friday: two new portfolio pieces shipped — SQL Marketing Analytics Dashboard and A/B Test Framework.",days:[
+{day:31,date:"Mon Aug 10",focus:"SQL queries for marketing analytics",phase:"p4",tasks:[
+{type:"build",text:'Write queries: conversion rate by channel, weekly cohort retention, top-performing campaign segments'},
+{type:"learn",text:'Learn basic window functions (RANK, LAG) — useful for cohort analysis'},
+{type:"learn",text:'Continue Course 5: Capstone — work through the data retrieval and processing modules'},
+]},
+{day:32,date:"Tue Aug 11",focus:"Build Portfolio Piece 6: SQL Marketing Analytics Dashboard",phase:"p4",tasks:[
+{type:"build",text:'Connect your BigQuery queries to a free <a href="https://lookerstudio.google.com" target="_blank">Looker Studio</a> dashboard'},
+{type:"build",text:'Build 3 visualizations: funnel conversion, cohort retention curve, channel comparison'},
+{type:"learn",text:'Finish Course 5: Capstone — complete the visualization module and submit the final project. This completes the full Python for Everybody specialization and unlocks the certificate.'},
+{type:"publish",text:'Document + push queries and a dashboard screenshot to GitHub. LinkedIn post: "Portfolio piece 6: SQL + marketing analytics dashboard."'},
+]},
+{day:33,date:"Wed Aug 12",focus:"A/B testing + CRO fundamentals",phase:"p4",tasks:[
+{type:"learn",text:'Learn CRO (Conversion Rate Optimization) basics: what to test, how to measure, what conversion means for a marketing page. Fullpath and the AI Growth Marketer roles list CRO experience. Read CXL Institute free intro (30 min).'},
+{type:"learn",text:'Learn the basics of statistical significance — sample size, p-value, confidence interval (any short primer, e.g. Optimizely\'s <a href="https://www.optimizely.com/optimization-glossary/statistical-significance/" target="_blank">stats significance explainer</a>)'},
+{type:"build",text:'Design an experiment template: hypothesis, primary metric, minimum sample size, test duration'},
+]},
+{day:34,date:"Thu Aug 13",focus:"Build Portfolio Piece 7: A/B Test Framework",phase:"p4",tasks:[
+{type:"build",text:'Build a small Python script (or well-built spreadsheet) that calculates statistical significance given two sample groups'},
+{type:"build",text:'Apply it to a real or simulated subject-line test — two email variants, open rates, sample sizes'},
+]},
+{day:35,date:"Fri Aug 14",focus:"A/B Test Framework polish + publish",phase:"p4",tasks:[
+{type:"build",text:'Write up the experiment result: hypothesis, result, what you\'d test next'},
+{type:"publish",text:'Push to GitHub. LinkedIn post: "Portfolio piece 7: an A/B test significance framework."'},
 ]}
 ]},
-{num:7,dates:"Jul 27–Aug 1",title:"Hero Project Complete + Power Skills + First Applications",goal:"By Saturday: hero project fully documented, GA4 certified, Mixpanel certified, Braze done, SQL cert earned, 10+ jobs applied.",days:[
-{day:37,date:"Mon Jul 27",focus:"Hero project polish + case study",phase:"p3",tasks:[
-{type:"build",text:'Run hero project 3 more times. Fix all remaining bugs. Label every Make module and n8n node clearly.'},
-{type:"build",text:'Write full case study: Problem → Solution → Tools (HubSpot, Make, Claude API, Python, Google Sheets) → How it works step by step → Results (time saved, scale) → What I\'d scale next (A/B testing, Braze integration)'},
-{type:"publish",text:'Push to <a href="https://github.com/ckaplivsky-lab" target="_blank">github.com/ckaplivsky-lab</a> with README, architecture diagram, screenshots'},
-{type:"publish",text:'Record 5-min Loom: explain business problem, show each step running, show output emails, show analytics sheet'},
+{num:7,dates:"Aug 17–21",title:"Hero Project — AI-Personalized Lifecycle Engine (Braze)",goal:"By Friday: hero project complete and documented, free Braze certification earned.",days:[
+{day:36,date:"Mon Aug 17",focus:"Braze setup + free learning path",phase:"p4",tasks:[
+{type:"learn",text:'Sign up for a <a href="https://www.braze.com" target="_blank">Braze</a> free trial (or Customer.io free trial if Braze trial access is limited)'},
+{type:"learn",text:'Complete the free Customer Engagement Learning Path at <a href="https://learning.braze.com/page/certification" target="_blank">learning.braze.com</a>'},
+{type:"build",text:'Import a sample list of HubSpot leads into Braze'},
 ]},
-{day:38,date:"Tue Jul 28",focus:"GA4 + Mixpanel certifications",phase:"p4",tasks:[
-{type:"learn",text:'Complete <a href="https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431-google-analytics-4" target="_blank">Google Analytics 4 certification</a> at Google Skillshop — all modules + pass exam'},
-{type:"learn",text:'Complete <a href="https://mixpanel.com/blog/product-analytics-certification/" target="_blank">Mixpanel Product Analytics Certification</a> — all modules + pass exam (free)'},
-{type:"publish",text:'Add GA4 and Mixpanel certs to LinkedIn immediately'},
-{type:"build",text:'Set up free Mixpanel project at <a href="https://mixpanel.com" target="_blank">mixpanel.com</a>. Add JS tracking snippet to a simple HTML page. Trigger some events. View them in Mixpanel.'},
+{day:37,date:"Tue Aug 18",focus:"Segmentation + trigger-based journey",phase:"p4",tasks:[
+{type:"build",text:'Build audience segments in Braze: new lead / engaged / dormant'},
+{type:"build",text:'Build a trigger-based Canvas: welcome message → engagement nudge → win-back sequence'},
 ]},
-{day:39,date:"Wed Jul 29",focus:"Braze + Kaggle SQL cert + LinkedIn update",phase:"p4",tasks:[
-{type:"learn",text:'Sign up at <a href="https://learning.braze.com" target="_blank">learning.braze.com</a> (free). Complete "Braze Foundations" + "Campaign Basics" courses'},
-{type:"build",text:'Build mock lifecycle campaign in Braze sandbox: 3-step onboarding (Day 0 welcome, Day 3 tips, Day 7 check-in), segmented by signup source. Screenshot for portfolio.'},
-{type:"learn",text:'Complete <a href="https://www.kaggle.com/learn/intro-to-sql" target="_blank">Kaggle Intro to SQL</a> — all lessons + earn certificate (free, browser-based)'},
-{type:"publish",text:'Update full LinkedIn profile: headline, updated About (B2B marketing → AI automation specialist → Tel Aviv), all 5 certs listed, 5 projects with Loom links'},
+{day:38,date:"Wed Aug 19",focus:"Claude API personalization layer",phase:"p4",tasks:[
+{type:"build",text:'Use Claude API to generate personalized copy variants for each segment'},
+{type:"build",text:'Wire it together in Make: HubSpot lead data → Claude API generates copy → feeds into Braze content blocks'},
 ]},
-{day:40,date:"Thu Jul 30",focus:"Hero project LinkedIn post + first job applications",phase:"p4",tasks:[
-{type:"publish",text:'LinkedIn post: "Portfolio piece 5 complete: AI Lifecycle Campaign System. Here\'s the full breakdown..." Include Loom + GitHub links. Most important post yet — make it detailed.'},
-{type:"publish",text:'Apply to 5 AI roles in Tel Aviv on <a href="https://www.linkedin.com/jobs/search/?keywords=AI+automation&location=Israel" target="_blank">LinkedIn Israel</a>. Include the AI Growth Marketer role you saved. Customize each message with one specific reason why your background fits.'},
-{type:"publish",text:'Connect with 10 people at target companies (monday.com, Oktopost, Placer.ai, Rapyd, WalkMe). Short personal note — curiosity, not a pitch.'},
-{type:"publish",text:'Add Kaggle SQL, Braze to LinkedIn certs/skills'},
+{day:39,date:"Thu Aug 20",focus:"End-to-end testing + Braze Skills Badge",phase:"p4",tasks:[
+{type:"build",text:'Test the full flow end to end with sample leads. Fix anything that breaks.'},
+{type:"learn",text:'Attempt the free <a href="https://learning.braze.com/page/certification" target="_blank">Braze Customer Engagement Skills Badge</a> exam'},
 ]},
-{day:41,date:"Fri Jul 31",focus:"Maven enroll + more applications",phase:"p4",tasks:[
-{type:"paid",text:'Enroll in <a href="https://maven.com/britney-muller/actionable-ai-for-marketers" target="_blank">Maven: Actionable AI for Marketers</a> by Britney Muller (~$500). Check next cohort start date.'},
-{type:"publish",text:'Apply to 5 more jobs. By end of today: 10+ applications out.'},
-{type:"build",text:'Practice your story out loud: 3-minute version — who you are, what you built, why Tel Aviv, what you\'re looking for. Do it until it sounds natural.'},
-{type:"build",text:'Write your "hero project" interview talking points: 3 paragraphs you can say out loud. Practice.'},
-]},
-{day:42,date:"Sat Aug 1",focus:"Saturday — interactive resume start + portfolio review",phase:"sat",tasks:[
-{type:"build",text:'Start planning your interactive resume: open a new GitHub repo called "portfolio". Sketch sections: photo, bio, 6 project cards, cert badges, contact button. Use Claude Code to help scaffold the HTML/CSS.'},
-{type:"publish",text:'Review all 5 portfolio projects. Are all READMEs clear and polished? Fix anything a recruiter might not understand.'},
-{type:"publish",text:'LinkedIn post: "Week 7 done. I\'ve applied to 10+ AI roles in Tel Aviv. Here\'s what my application looks like and how I\'m standing out..." Share your Loom cover letter strategy.'},
+{day:40,date:"Fri Aug 21",focus:"Hero project documentation + publish",phase:"p4",tasks:[
+{type:"build",text:'Write the full case study: Problem → Solution → Tools → How it works → Results → What I\'d scale next'},
+{type:"publish",text:'Push to GitHub. Add to interactive resume once it exists.'},
+{type:"publish",text:'LinkedIn post: "Hero project done: an AI-personalized lifecycle engine built with HubSpot, Braze, and Claude API."'},
 ]}
 ]},
-{num:8,dates:"Aug 3–8",title:"Maven + Interactive Resume + Application Sprint",goal:"By Saturday: interactive resume live on GitHub Pages, Maven Week 2 done, Portfolio Piece 6 started, 25+ jobs applied.",days:[
-{day:43,date:"Mon Aug 3",focus:"Maven Week 1 + interactive resume build",phase:"p4",tasks:[
-{type:"learn",text:'Complete Maven Week 1: AI landscape for marketers, tool evaluation frameworks at <a href="https://maven.com/britney-muller/actionable-ai-for-marketers" target="_blank">maven.com</a>'},
-{type:"build",text:'Maven homework: evaluate 3 AI tools you\'ve used this sprint using the course framework. Write up findings in Notion.'},
-{type:"build",text:'Build interactive resume: HTML/CSS with photo, bio, 6 project cards, cert badges, contact button. Use Claude Code to help — this is what it\'s built for.'},
+{num:8,dates:"Aug 24–28",title:"Capstone Agent + Analytics Certs + Interactive Resume + LinkedIn",goal:"By Friday: Marketing Ops Audit Agent (capstone) complete, GA4 and Mixpanel certified, interactive resume live, LinkedIn fully rebuilt.",days:[
+{day:41,date:"Mon Aug 24",focus:"Maven start + GA4/Mixpanel certs",phase:"p4",tasks:[
+{type:"build",text:'Start Portfolio Piece 8: Marketing Ops Audit Agent. Build intake Typeform: company name, website, team size, tools used, biggest marketing bottlenecks. Set up n8n trigger.'},
+{type:"learn",text:'Complete <a href="https://skillshop.google.com" target="_blank">Google Analytics 4 — Google Skillshop</a> certification'},
+{type:"learn",text:'Complete <a href="https://mixpanel.com/education/" target="_blank">Mixpanel Product Analytics Certification</a>'},
 ]},
-{day:44,date:"Tue Aug 4",focus:"Interactive resume — polish + GitHub Pages deploy",phase:"p4",tasks:[
-{type:"build",text:'Add real content to resume: actual Loom links, GitHub links, real cert badge images, real bio'},
-{type:"build",text:'Deploy on GitHub Pages: repo Settings → Pages → Deploy from main branch. Live URL: ckaplivsky-lab.github.io/portfolio'},
-{type:"learn",text:'Maven Week 2 materials'},
-{type:"publish",text:'Apply to 5 more jobs. Include your live resume URL in every application from now on.'},
+{day:42,date:"Tue Aug 25",focus:"Capstone Part 2 + landing page + creative assets",phase:"p4",tasks:[
+{type:"build",text:'Capstone Part 2: n8n pulls public data (website + LinkedIn + job postings) for the company. Claude analyses gaps and outputs top 5 workflow recommendations with ROI estimates.'},
+{type:"build",text:'Start building your interactive resume web page (HTML/CSS on GitHub Pages)'},
+{type:"build",text:'Build an AI-generated landing page for a mock product launch (e.g. a Jurni or Base44-style product). Write your own positioning copy, use Claude to scaffold the HTML/CSS, deploy on GitHub Pages. This directly addresses what Jurni, Base44, and the AI Growth Marketer role ask for.'},
 ]},
-{day:45,date:"Wed Aug 5",focus:"Maven Week 3 + Portfolio Piece 6",phase:"p4",tasks:[
-{type:"learn",text:'Maven Week 3 materials'},
-{type:"build",text:'Build Portfolio Piece 6 from Maven deliverables — document the AI marketing workflow built as part of the course'},
-{type:"publish",text:'Apply to 5 more jobs using your live resume URL'},
+{day:43,date:"Wed Aug 26",focus:"Interactive resume build",phase:"p4",tasks:[
+{type:"build",text:'Add photo, bio, 8 project cards with links, cert badges, contact button'},
+{type:"publish",text:'Deploy to <a href="https://ckaplivsky-lab.github.io/portfolio" target="_blank">ckaplivsky-lab.github.io/portfolio</a>'},
 ]},
-{day:46,date:"Thu Aug 6",focus:"Maven Week 4 + AI content tools + applications",phase:"p4",tasks:[
-{type:"learn",text:'Maven Week 4 materials'},
-{type:"build",text:'Use <a href="https://www.ideogram.ai" target="_blank">Ideogram.ai</a> (free): generate 10 mock campaign images for portfolio. Screenshot best 3.'},
-{type:"build",text:'Use <a href="https://www.perplexity.ai" target="_blank">Perplexity AI</a> to research your top 5 target companies in depth: recent news, AI initiatives, team. Use to personalize applications.'},
-{type:"publish",text:'Apply to 5 more jobs — personalized using Perplexity research. Total: 25+ applications.'},
+{day:44,date:"Thu Aug 27",focus:"LinkedIn full overhaul",phase:"p4",tasks:[
+{type:"publish",text:'Rewrite About section: clear story from B2B marketing → AI automation specialist → Tel Aviv'},
+{type:"publish",text:'Pin 3 best LinkedIn posts: hero project, crewAI demo, SQL dashboard'},
+{type:"publish",text:'Add interactive resume URL and GitHub URL to LinkedIn contact info and About section'},
 ]},
-{day:47,date:"Fri Aug 7",focus:"Maven complete + LinkedIn final optimization",phase:"p4",tasks:[
-{type:"learn",text:'Complete Maven remaining weeks/sessions'},
-{type:"build",text:'Document Portfolio Piece 6 with case study template. Push to GitHub. Add to interactive resume.'},
-{type:"publish",text:'Final LinkedIn About section: clear story from B2B marketing → AI automation specialist → Tel Aviv. Paste into Claude and ask for feedback.'},
-{type:"publish",text:'Pin 3 best LinkedIn posts: hero project, crewAI demo, n8n Loom'},
-{type:"publish",text:'Send personal LinkedIn messages to connections at target companies: ask for 15-min call, not a job'},
-]},
-{day:48,date:"Sat Aug 8",focus:"Saturday — portfolio review + resume URL share",phase:"sat",tasks:[
-{type:"publish",text:'LinkedIn post: "I just finished Maven\'s Actionable AI for Marketers. Here\'s what I learned about applying AI to marketing strategy..." Be specific.'},
-{type:"build",text:'Review interactive resume — share the URL with a friend and ask if they understand what you do within 10 seconds. Fix anything unclear.'},
-{type:"publish",text:'Add Maven cert to LinkedIn when issued'},
+{day:45,date:"Fri Aug 28",focus:"Maven complete + application sprint start",phase:"p4",tasks:[
+{type:"build",text:'Capstone Part 3: Auto-generate PDF report and email it to the intake form address. Test with 3 real Israeli companies (Wix, Melio, Placer.ai). Full case study documentation.'},
+{type:"publish",text:'Push capstone to GitHub with Loom walkthrough. This is your #1 portfolio piece for Base44 and Fullpath interviews.'},
+{type:"publish",text:'Apply to 5 jobs at your top target companies'},
 ]}
 ]},
-{num:9,dates:"Aug 10–15",title:"Decision Maker Outreach + Loom Cover Letters + Max Applications",goal:"By Saturday: 40+ jobs applied, Loom cover letters sent to top companies, 30-day automation plans written, GitHub fully polished.",days:[
-{day:49,date:"Mon Aug 10",focus:"Loom cover letters + decision maker research",phase:"p4",tasks:[
-{type:"publish",text:'Apply to 5 jobs. For top 3, record a 90-second Loom video cover letter: introduce yourself, mention one specific thing about the company, show one relevant portfolio project.'},
-{type:"publish",text:'Search LinkedIn for decision makers at top 10 target companies: "Head of Marketing Ops", "VP Growth", "CTO", "AI Lead". Connect with personal note.'},
-{type:"build",text:'Write a "30-day automation plan" doc for your top target company — what you\'d automate in their marketing or ops team in your first 30 days. 1 page, specific. Include in your application.'},
+{num:9,dates:"Aug 31–Sep 2",title:"Final Applications + Outreach + Launch",goal:"Sep 2: done. Every target role applied to, every project polished, ready to land.",days:[
+{day:46,date:"Mon Aug 31",focus:"Loom cover letters + decision maker outreach",phase:"p4",tasks:[
+{type:"publish",text:'For your top 3 target companies, record a 90-second Loom video cover letter introducing yourself and showing one relevant portfolio project.'},
+{type:"publish",text:'Search LinkedIn for decision makers at your top target companies. Connect with a personal note.'},
+{type:"build",text:'Write a "30-day automation plan" doc for your top target company — what you\'d automate in their marketing/ops team in your first 30 days.'},
+{type:"build",text:'Build a sales enablement one-pager using your capstone project as the story. Jurni asks for "one-pagers and case studies that help close deals" and Base44 wants "product content and customer stories at speed." Write it fast using Claude, design it in Canva.'},
 ]},
-{day:50,date:"Tue Aug 11",focus:"Personalized outreach + mini automations",phase:"p4",tasks:[
-{type:"publish",text:'Write and send 5 personalized outreach messages: "Hi [name], I\'ve been following [company]\'s work on [specific thing]. I\'m an AI automation specialist moving to Tel Aviv this month — I built [relevant project] and think it maps to what you\'re doing. Would love a 15-min conversation."'},
-{type:"build",text:'Build one mini automation about a target company: monitor their job postings or news mentions, send you a daily digest. Include it in your application to that company.'},
-{type:"publish",text:'Apply to 5 more jobs. Follow up on any LinkedIn connections not responded after 5 days.'},
+{day:47,date:"Tue Sep 1",focus:"Final applications + GitHub polish",phase:"p4",tasks:[
+{type:"publish",text:'Apply to remaining target roles. Follow up on any LinkedIn connections not responded to after 5 days.'},
+{type:"build",text:'Final GitHub profile README polish: bio, 8 project cards with links, cert logos, contact info, interactive resume link'},
+{type:"build",text:'Ensure all 8 portfolio projects have polished READMEs with screenshots and Loom links'},
 ]},
-{day:51,date:"Wed Aug 12",focus:"Applications + GitHub final polish",phase:"p4",tasks:[
-{type:"publish",text:'Apply to 5 more jobs. Total should be 35+ by now.'},
-{type:"build",text:'Update <a href="https://github.com/ckaplivsky-lab" target="_blank">GitHub profile README</a>: clean portfolio page with bio, 6 project cards with links, cert logos, contact info, link to interactive resume'},
-{type:"build",text:'Ensure all 6 portfolio projects have polished READMEs with screenshots and Loom links'},
-{type:"build",text:'Build a "portfolio brief" PDF: 1 page, 6 project summaries, 9 cert logos, contact info. Use Notion AI to write it. Send with applications as attachment.'},
-]},
-{day:52,date:"Thu Aug 13",focus:"Final applications + outreach follow-ups",phase:"p4",tasks:[
-{type:"publish",text:'Apply to 5 more jobs with the most personalized cover messages yet. Total: 40+.'},
-{type:"publish",text:'Follow up with anyone who hasn\'t responded to outreach — one polite follow-up after 5 days is appropriate'},
-{type:"publish",text:'Ensure all 9 certifications are on LinkedIn with correct dates and issuing organizations'},
-]},
-{day:53,date:"Fri Aug 14",focus:"Final LinkedIn + final applications",phase:"p4",tasks:[
-{type:"publish",text:'LinkedIn post: "I just completed a 9-week AI career sprint. Here\'s everything I built: [6 projects]. Here\'s what I earned: [9 certs]. Landing in Tel Aviv Aug 22, actively looking for AI Ops, AI Solutions, and Lifecycle Marketing roles. DMs open." Make it specific and genuine.'},
-{type:"publish",text:'Apply to final 5 roles — best cover messages you\'ve ever written. You have 9 weeks of proof behind every claim.'},
-{type:"build",text:'Make sure all Loom videos are accessible and not expired. Re-record any that aren\'t working.'},
-]},
-{day:54,date:"Sat Aug 15",focus:"Saturday — final prep + celebrate",phase:"sat",tasks:[
-{type:"build",text:'Update interactive resume with any final certs or projects from this week'},
-{type:"publish",text:'Send personal thank-you messages to anyone who responded to your outreach'},
-{type:"build",text:'Write yourself a note: what you want to keep learning from Tel Aviv. This becomes your agenda when you ask Claude what to build next after you land.'},
-],note:"You\'re almost there. 45+ jobs applied. 6 projects. 9 certs. Pack your bags. You\'ve earned it."}
-]},
-{num:10,dates:"Aug 17–19",title:"Final 3 Days — Land Ready",goal:"Aug 19: done. Aug 20: buffer day. Aug 22: Tel Aviv. You are ready.",days:[
-{day:55,date:"Mon Aug 17",focus:"Final applications + follow-ups",phase:"p4",tasks:[
-{type:"publish",text:'Check all applications — follow up on any 1+ week old with a short polite note'},
-{type:"publish",text:'Apply to any new AI roles that posted this week on <a href="https://www.linkedin.com/jobs/search/?keywords=AI+automation&location=Israel" target="_blank">LinkedIn Israel</a>, <a href="https://www.jobmaster.co.il" target="_blank">Jobmaster</a>, <a href="https://www.comeet.com" target="_blank">Comeet</a>, <a href="https://www.alljobs.co.il" target="_blank">AllJobs</a>'},
-{type:"build",text:'Final GitHub check: every repo has a README, every project has a Loom link, everything is public and accessible'},
-]},
-{day:56,date:"Tue Aug 18",focus:"Final LinkedIn + resume polish",phase:"p4",tasks:[
-{type:"publish",text:'LinkedIn 100% complete: profile photo, banner, headline, About, all experience, all 9 certs, featured section with 3 best posts'},
-{type:"build",text:'Add interactive resume URL and GitHub URL to LinkedIn contact info and About section'},
-{type:"publish",text:'Send resume URL to 5 people in your network who might know someone hiring in Tel Aviv'},
-]},
-{day:57,date:"Wed Aug 19",focus:"Done. 🎉",phase:"p4",tasks:[
-{type:"publish",text:'Final LinkedIn post: "Tomorrow I fly to Tel Aviv. Here\'s the story of the last 9 weeks and what I built..." Tell the full journey. This is your most important post.'},
+{day:48,date:"Wed Sep 2",focus:"Done. 🎉",phase:"p4",tasks:[
+{type:"publish",text:'Final LinkedIn post: "Today I finish a career sprint — here\'s everything I built." Tell the full story: 8 projects, 7 certs, Tel Aviv bound.'},
 {type:"build",text:'Write yourself a note: what you want to keep learning from Tel Aviv — the agenda for your next Claude conversation after you land.'},
-{type:"publish",text:'Send one final thank-you message to anyone who helped, connected, or responded during your sprint.'},
-],note:"🎉 57 days done. 6 AI projects. 9 certifications. A skill stack most people spend years building. You did it in 9 weeks. Go land the job."}
+{type:"publish",text:'Send a final thank-you message to anyone who helped, connected, or responded during your sprint.'},
+],note:"🎉 48 days done. 8 AI projects. 7 certifications, all mapped to real job postings. Pack your bags."}
 ]}
 ];
+
+const TOOLS={
+auto:[['Make.com','Week 1','https://make.com'],['n8n','Week 1','https://n8n.io'],['Zapier','Week 1','https://zapier.com'],['Postman','Week 1','https://postman.com'],['HubSpot','Week 1','https://hubspot.com'],['Webhooks / REST APIs','Week 1','']],
+ai:[['Claude API','Week 1','https://console.anthropic.com'],['LangChain','Week 4','https://langchain.com'],['crewAI','Week 5','https://crewai.com'],['ChromaDB','Week 4','https://trychroma.com']],
+code:[['Python','Weeks 2–3','https://python.org'],['Claude Code','Week 2','https://claude.ai/code'],['Cursor','Week 2','https://cursor.sh'],['Replit','Week 2','https://replit.com'],['GitHub','Ongoing','https://github.com/ckaplivsky-lab']],
+data:[['Braze','Week 7','https://www.braze.com'],['SQL / BigQuery','Week 6','https://cloud.google.com/bigquery'],['Looker Studio','Week 6','https://lookerstudio.google.com'],['Google Analytics 4','Week 8','https://analytics.google.com'],['Mixpanel','Week 8','https://mixpanel.com'],['Airtable','Weeks 1–2','https://airtable.com'],['Notion','Ongoing','https://notion.so']]
+};
+function buildTools(){
+  Object.entries(TOOLS).forEach(([key,items])=>{
+    const el=document.getElementById('tools-'+key);
+    if(!el)return;
+    el.style.display='grid';el.style.gridTemplateColumns='repeat(auto-fill,minmax(200px,1fr))';el.style.gap='12px';
+    el.innerHTML=items.map(([name,week,url])=>`<div style="padding:10px 12px;background:var(--bg2);border-radius:var(--rs)"><div style="font-size:13px;font-weight:600;color:var(--text)">${url?`<a href="${url}" target="_blank">${name}</a>`:name}</div><div style="font-size:11px;color:var(--text3);margin-top:2px">${week}</div></div>`).join('');
+  });
+}
 
 function buildPlan(){
   const nav=document.getElementById('week-nav');
@@ -783,16 +698,18 @@ function load(){
 function updateStats(){
   const dd=document.querySelectorAll('.day-check.checked').length;
   const td=document.querySelectorAll('.task-chk.done').length;
-  document.getElementById('st-days').textContent=dd+'/57';
+  document.getElementById('st-days').textContent=dd+'/48';
   document.getElementById('st-tasks').textContent=td;
-  document.getElementById('st-left').textContent=(57-dd);
+  document.getElementById('st-left').textContent=(48-dd);
   document.getElementById('hdr-done').textContent=dd+' done';
   let ph='Phase 1';
-  if(dd>=55)ph='Final stretch';
-  else if(dd>=43)ph='Launch';
-  else if(dd>=31)ph='Agents';
-  else if(dd>=19)ph='Python';
-  else if(dd>=13)ph='Claude API';
+  if(dd>=46)ph='Final stretch';
+  else if(dd>=41)ph='Launch';
+  else if(dd>=31)ph='Data & Analytics';
+  else if(dd>=21)ph='Agents';
+  else if(dd>=16)ph='Python + APIs';
+  else if(dd>=11)ph='Claude Code + Python';
+  else if(dd>=9)ph='Claude API';
   document.getElementById('st-phase').textContent=ph;
   WEEKS.forEach((w,i)=>{
     const done=w.days.every(d=>{const b=document.getElementById('dchk-'+d.day);return b&&b.classList.contains('checked');});
@@ -809,12 +726,7 @@ function showMain(id){
   if(idx!==-1)document.querySelectorAll('.mtab')[idx].classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
 }
-buildPlan();load();updateStats();
-setTimeout(()=>{
-  const b=document.getElementById('dchk-1');
-  const c=document.getElementById('dc-1');
-  if(b&&!b.classList.contains('checked')){b.classList.add('checked');if(c)c.classList.add('done-card');save();updateStats();}
-},500);
+buildPlan();buildTools();load();updateStats();
 </script>
 </body>
 </html>
